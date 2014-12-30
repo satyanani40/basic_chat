@@ -44,7 +44,7 @@
                if(e.which == 13) {
                     room = $(this).attr('id');
                     val = $(this).val()
-                   
+
                     socket.emit('my room event', {room: room, data:val });
                     return false;
 
@@ -79,7 +79,6 @@
         <a href ="" class="partner" id="{{user}}_{{ me }}">{{ user }} </a><br/>
         {% endfor %}
         <div id="notific"></div>
-        <input type="text" name="send_message" id="ss" class = "send_messages">
         <div id="targetdiv"></div>
     <!--<form id="join" method='POST' action='#'>
         <input type="text" name="join_room" id="join_room" placeholder="Room Name">
